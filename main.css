@@ -1,0 +1,20 @@
+h3  {
+	display: flex;
+	justify-content: center;
+}
+
+.js-search-form {
+	display: flex;
+	justify-content: center;
+}
+
+.js-search-results {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.js-search-results img {
+	width: 50px;
+	justify-content: center;
+}

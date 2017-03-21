@@ -22,12 +22,12 @@ function displaySearchData(data) {
   var resultElement = '';
   if (data.hits) {
     data.hits.forEach(function(item) {
-     resultElement += '<p>' + item.recipe.label + '</p>';
-     resultElement += `<img src="${item.recipe.image}">` 
+      resultElement += `<a href="${item.recipe.url}" target="_blank">` + item.recipe.label + `</a>`,
+      resultElement += `<img src="${item.recipe.image}">` 
     });
   }
   else {
-    resultElement += '<p>No results</p>';
+    resultElement += '<h4>No results</h4>';
   }
   
   $('.js-search-results').html(resultElement);
