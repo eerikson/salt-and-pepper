@@ -5,8 +5,10 @@ function getDataFromApi(searchTerm, callback) {
   var settings = {
     url: Edamam_URL,
     data: {
-      part: 'snippet',
-      q: searchTerm,
+      app_id: "b0c0dab4",
+      app_key: "f312cd5d8d6125c74991aaca9988db77",
+      q: searchTerm, 
+
     },
     dataType: 'json',
     type: 'GET',
@@ -15,11 +17,13 @@ function getDataFromApi(searchTerm, callback) {
   $.ajax(settings);
 }
 
+
 function displaySearchData(data) {
   var resultElement = '';
-  if (data.items) {
-    data.items.forEach(function(item) {
-     resultElement += '<p>' + item.snippet.title + '</p>';
+  if (data.hits) {
+    data.hits.forEach(function(item) {
+     resultElement += '<p>' + item.recipe.label + '</p>';
+     resultElement += `<img src="${item.recipe.image}">` 
     });
   }
   else {
@@ -37,4 +41,6 @@ function watchSubmit() {
   });
 }
 
-$(function(){watchSubmit();});
+$(function(){watchSubmit();
+
+});
