@@ -1,6 +1,14 @@
-h3  {
+h3{
+	padding-top: 50px;
 	display: flex;
 	justify-content: center;
+}
+
+#container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-around;
 }
 
 .js-search-form {
@@ -9,12 +17,15 @@ h3  {
 }
 
 .js-search-results {
+	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
+
 }
 
 .js-search-results img {
-	width: 50px;
-	justify-content: center;
+	width: 150px;
 }
+
+
