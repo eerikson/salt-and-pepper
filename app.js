@@ -1,5 +1,4 @@
 var Edamam_URL = 'https://api.edamam.com/search';
-var random = '4';
 
 function getDataFromApi(searchTerm, callback) {
   var settings = {
