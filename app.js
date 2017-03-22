@@ -1,5 +1,15 @@
 var Edamam_URL = 'https://api.edamam.com/search';
 
+$("#start").on('click', function starting(){
+  $("#start").addClass("hidden");
+  displayContent();
+});
+
+function displayContent(start){
+  $("#container").removeClass("hidden");
+};
+
+
 function getDataFromApi(searchTerm, callback) {
   var settings = {
     url: Edamam_URL,

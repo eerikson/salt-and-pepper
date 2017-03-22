@@ -11,6 +11,25 @@ h3{
 	justify-content: center;
 }
 
+#begin {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	width: auto;
+
+}
+
+#start {
+	display: flex;
+	flex-wrap: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
 #container{
 	display: flex;
 	flex-direction: column;
@@ -19,6 +38,7 @@ h3{
 }
 
 .js-search-form {
+	padding-top: 25px;
 	color: white;
 	display: flex;
 	justify-content: center;
