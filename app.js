@@ -1,7 +1,7 @@
 var Edamam_URL = 'https://api.edamam.com/search';
 
-$("#start").on('click', function starting(){
-  $("#start").addClass("hidden");
+$("#begin").on('click', function starting(){
+  $("#begin").addClass("hidden");
   displayContent();
 });
 
