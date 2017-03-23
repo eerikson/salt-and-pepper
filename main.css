@@ -12,14 +12,13 @@ h3{
 }
 
 #begin {
-	padding-top: 10px;
+	padding-top: 0px;
 	display: flex;
 	justify-content: center;
 	width: auto;
-
 }
 
-#start {
+#startButton {
 	display: flex;
 	flex-wrap: row;
 	justify-content: center;
@@ -35,6 +34,9 @@ h3{
 	flex-direction: column;
 	justify-content: center;
 	justify-content: space-around;
+}
+#inputQuery {
+  width: 300px;
 }
 
 #search {

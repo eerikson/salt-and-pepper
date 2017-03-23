@@ -1,7 +1,8 @@
 var Edamam_URL = 'https://api.edamam.com/search';
 
-$("#begin").on('click', function starting(){
-  $("#begin").addClass("hidden");
+$("#startButton").on('click', function(){
+  $("#begin").remove();
+  /*$("#begin").addClass("hidden");*/
   displayContent();
 });
 
@@ -28,7 +29,7 @@ function getDataFromApi(searchTerm, callback) {
 function displaySearchData(data){
   var resultArray = [];
   var resultElement = '';
-  if (data.hits) {
+  if (data.hits.length > 0) {
       data.hits.forEach(function(item){
         var resultObject = {};
         resultObject.label = item.recipe.label,
@@ -40,8 +41,6 @@ function displaySearchData(data){
       
       var random = Math.floor((Math.random()*10)+1);
       var finish = resultArray[random];
-      
-      console.log(finish);
       
       function display(finishData){
         resultElement += `<a href="${finishData.url}" target="_blank">` + finishData.label + `</a><br>`,
