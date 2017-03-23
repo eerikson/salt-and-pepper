@@ -45,7 +45,7 @@ function displaySearchData(data){
       
       function display(finishData){
         resultElement += `<a href="${finishData.url}" target="_blank">` + finishData.label + `</a><br>`,
-        resultElement += `<img src="${finishData.image}"><br>`
+        resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`
       }
       display(finish);
       
