@@ -1,3 +1,3 @@
 ## Salt and Pepper
 
-#Randomizing Dinner options
+# Randomizing Dinner options
