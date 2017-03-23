@@ -37,6 +37,11 @@ h3{
 	justify-content: space-around;
 }
 
+#search {
+  border: 1px solid rgb(128,128,128);
+  border-radius: 6px;
+}
+
 .js-search-form {
 	padding-top: 25px;
 	color: white;
