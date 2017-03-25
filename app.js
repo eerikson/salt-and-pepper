@@ -35,6 +35,7 @@ function displaySearchData(data) {
       resultObject.label = item.recipe.label;
       resultObject.url = item.recipe.url;
       resultObject.image = item.recipe.image;
+      resultObject.ingredients = item.recipe.ingredientLines;
            
       resultArray.push(resultObject);
     });
@@ -43,8 +44,11 @@ function displaySearchData(data) {
     var finish = resultArray[random];
     
     function display(finishData) {
-      resultElement += `<a href="${finishData.url}" target="_blank">` + finishData.label + `</a>`,
-      resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`
+      resultElement += `<div class="card">`;
+      resultElement += `<a href="${finishData.url}" target="_blank">${finishData.label}</a>`;
+      resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`;
+      resultElement += `<ul> ${finishData.ingredients} </ul>`;
+      resultElement += `</div>`;
     }
     display(finish);
     
