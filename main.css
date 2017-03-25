@@ -9,6 +9,14 @@ body {
   width: 100%
 }
 
+.footer {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  padding-left: 10%
+}
+
 h3 {
   font-family: "Times New Roman", serif;
   font-size: 4em;
@@ -42,6 +50,7 @@ h3 {
   background-color: rgb(63,152,203);
   font-family: "Times New Roman", serif;
   font-size: 1.5em;
+  margin: 0 0;
 }
 
 input[type=text] {
