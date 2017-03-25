@@ -35,25 +35,30 @@ function displaySearchData(data) {
       resultObject.label = item.recipe.label;
       resultObject.url = item.recipe.url;
       resultObject.image = item.recipe.image;
-      resultObject.ingredients = item.recipe.ingredientLines;
+      resultObject.ingredients = [];
+      resultObject.ingredients.push(item.recipe.ingredientLines);
            
       resultArray.push(resultObject);
     });
     
     var random = Math.floor((Math.random()*10)+1);
     var finish = resultArray[random];
-    
+
+    console.log(finish.ingredients[0][2]);
+
     function display(finishData) {
       resultElement += `<div class="card">`;
       resultElement += `<a href="${finishData.url}" target="_blank">${finishData.label}</a>`;
       resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`;
       resultElement += `<ul>`;
-      resultElement +=   
-      resultElement += `</div>`; 
-      resultElement += </ul>
+
+      for (i=0; i < finishData.ingredients[0].length; i++) {
+        console.log(finishData.ingredients.length);
+        resultElement += `<li>(${finishData.ingredients[0][i]})</li>`;
+      }
+      resultElement += `</ul>`;
       resultElement += `</div>`;  
         }
-      }
     display(finish);
     
   } else {
