@@ -64,6 +64,7 @@ input[type=text] {
   text-align: left;
   border: 3px solid rgb(128,128,128);
   border-radius: 10px;
+  padding: 10px;
 }
 .search-results {
   font-size: 1em;
@@ -73,7 +74,7 @@ input[type=text] {
 }
 
 .search-results img {
-	width: 150px;
+	width: auto;
   height: auto;
 }
 
