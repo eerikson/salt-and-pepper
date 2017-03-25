@@ -1,14 +1,19 @@
 body {
-background: #4CA1AF; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-font-family: "avenir-next";
+  background: #4CA1AF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "avenir-next";
 }      
 
-h3{
-	padding-top: 50px;
-	display: flex;
-	justify-content: center;
+.all {
+  width: 100%
+}
+
+h3 {
+  font-family: "Times New Roman", serif;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
 #begin {
@@ -19,49 +24,52 @@ h3{
 }
 
 #startButton {
-	display: flex;
-	flex-wrap: row;
-	justify-content: center;
-	align-content: center;
+	margin: 0 10px;
+  font-family: "Times New Roman", serif;
+  font-size: 2em;
+  border: 1px solid rgb(63,110,203);
+  border-radius: 6px;
+  background-color: rgb(63,152,203);
 }
 
 .hidden {
 	visibility: hidden;
 }
 
-#container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	justify-content: space-around;
-}
-#inputQuery {
-  width: 300px;
-}
-
 #search {
   border: 1px solid rgb(128,128,128);
   border-radius: 6px;
+  background-color: rgb(63,152,203);
+  font-family: "Times New Roman", serif;
+  font-size: 1.5em;
 }
 
-.js-search-form {
-	padding-top: 25px;
-	color: white;
-	display: flex;
-	justify-content: center;
+input[type=text] {
+  height: 2em;
+  font-size: 1.5em;
+  width: 400px;
 }
 
-.js-search-results {
-	padding-top: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
+.search-form {
+	padding-top: 10px;
+  margin: 0 10px;
+  text-align: center;
 }
 
-.js-search-results img {
+.search-results {
+  font-size: 1em;
+  padding-top: 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.search-results img {
 	width: 150px;
+  height: auto;
 }
 
+#random {
+  font-size: 2.5em;
+}
 
-
+/*end*/

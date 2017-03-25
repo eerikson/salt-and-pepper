@@ -43,7 +43,7 @@ function displaySearchData(data) {
     var finish = resultArray[random];
     
     function display(finishData) {
-      resultElement += `<a href="${finishData.url}" target="_blank">` + finishData.label + `</a><br>`,
+      resultElement += `<a href="${finishData.url}" target="_blank">` + finishData.label + `</a>`,
       resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`
     }
     display(finish);
@@ -51,13 +51,15 @@ function displaySearchData(data) {
   } else {
     resultElement += `<h4>No results</h4>`;
   }
-  $('.js-search-results').html(resultElement);
+  $('.search-results').html(resultElement);
 };
 
+/*$(#search).transition({ rotate: '45deg' });*/
+
 function watchSubmit() {
-  $('.js-search-form').submit(function(e) {
+  $('.search-form').submit(function(e) {
     e.preventDefault();
-    var query = $(this).find('.js-query').val();
+    var query = $('#inputQuery').val();
     getDataFromApi(query, displaySearchData);
   });
 }

@@ -6,19 +6,23 @@
   <script src="https://use.fontawesome.com/43bf9f26e0.js"></script>
 </head>
 <body>
-  <h3>Salt and Pepper</h3>
-  <div id="begin">
-    <i id="start" class="fa fa-cutlery" aria-hidden="true"></i><button id="startButton" type="submit">Let's find a recipe</button><i id="start" class="fa fa-cutlery" aria-hidden="true"></i>
-  </div>
-  <div id="container" class="hidden"> 
-    <form action="#" class="js-search-form">
-      <label for="query"></label>
-      <input id="inputQuery" type="text" class="js-query" required>
-      <i class="fa fa-random" aria-hidden="true"></i><button id="search" type="submit">Recipe Roulette</button>
-    </form>
-      
-    <div class="js-search-results">
+  <div class="all">
+    <h3>Salt and Pepper</h3>
+    <div id="begin">
+      <i class="fa fa-2x fa-cutlery"></i>
+      <button id="startButton" type="submit">Get started finding a recipe for your next meal</button>
+      <i class="fa fa-2x fa-cutlery"></i>
+    </div>
+    <div id="container" class="hidden"> 
+      <form action="#" class="search-form">
+        <p>Enter any ingredient or full dish name for a random excellent recipe</p><br><br>
+        <label for="query"></label>
+        <input id="inputQuery" type="text" placeholder="What do you want to eat?" required>
+        <i class="fa fa-random" id="random" aria-hidden="true"></i><button id="search" type="submit">Roulette</button>
+      </form>
         
+      <div class="search-results">
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
