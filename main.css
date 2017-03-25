@@ -56,6 +56,14 @@ input[type=text] {
   text-align: center;
 }
 
+.card {
+  font-size: 1em;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(51, 153, 255);
+  text-align: center;
+
+}
 .search-results {
   font-size: 1em;
   padding-top: 20px;

@@ -47,9 +47,13 @@ function displaySearchData(data) {
       resultElement += `<div class="card">`;
       resultElement += `<a href="${finishData.url}" target="_blank">${finishData.label}</a>`;
       resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`;
-      resultElement += `<ul> ${finishData.ingredients} </ul>`;
-      resultElement += `</div>`;
-    }
+      resultElement += `<ul>`;
+      resultElement +=   
+      resultElement += `</div>`; 
+      resultElement += </ul>
+      resultElement += `</div>`;  
+        }
+      }
     display(finish);
     
   } else {
