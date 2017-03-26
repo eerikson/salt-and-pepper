@@ -120,4 +120,9 @@ input[type=text] {
   font-size: 2.5em;
 }
 
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 50px;
+  }
+}
 /*end*/
