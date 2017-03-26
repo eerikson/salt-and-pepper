@@ -62,7 +62,7 @@ function displaySearchData(data) {
   } else {
     resultElement += `<h4>No results</h4>`;
   }
-  $('.search-results').append(resultElement);
+  $('.search-results').prepend(resultElement);
 };
 
 /*$(#search).transition({ rotate: '45deg' });*/
