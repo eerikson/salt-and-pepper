@@ -50,7 +50,7 @@ function displaySearchData(data) {
       resultElement += `<h2>${finishData.label}</h2>`;
       resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`;
       resultElement += `<h4><a href="${finishData.url}" target="_blank">${finishData.source}</a><h4><br>`;
-      resultElement += `<ul>`;
+      resultElement += `<ul class="list">`;
       for (i=0; i < finishData.ingredients[0].length; i++) {
         resultElement += `<li>(${finishData.ingredients[0][i]})</li>`;
       }

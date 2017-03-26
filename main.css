@@ -17,6 +17,14 @@ body {
   padding-left: 10%
 }
 
+h2 {  
+  font-family: "Times New Roman", serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
 h3 {
   font-family: "Times New Roman", serif;
   font-size: 4em;
@@ -30,6 +38,7 @@ h4 {
   text-align: center;
   padding: 0px;
   margin: 0px;
+  padding-top: 5px;
 }
 
 #begin {
@@ -79,25 +88,32 @@ input[type=text] {
   font-size: 1em;
   height: auto;
   width: 300px;
-  background-color: rgb(51, 153, 255);
-  text-align: left;
-  border: 3px solid rgb(128,128,128);
-  border-radius: 10px;
+  background-color: rgb(225, 237, 239);
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
   padding: 10px;
+  margin: 4px 4px 4px 4px;
 }
+
+.list{
+  font-family: "Arial", serif,;
+  font-style: normal;
+  font-size: .75em;
+  text-align: left;
+  margin-top: -25px; 
+}
+
 .search-results {
   font-size: 1em;
   padding-top: 20px;
   margin: 0 10px;
-  text-align: center;
-  display: flex;
-  display: inline-block;
-  flex-direction: row-reverse;
+  text-align: left;
 }
 
 .search-results img {
 	width: auto;
   height: auto;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #random {
