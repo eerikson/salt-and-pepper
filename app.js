@@ -49,7 +49,7 @@ function displaySearchData(data) {
       resultElement += `<div class="card">`;
       resultElement += `<h2>${finishData.label}</h2>`;
       resultElement += `<a href="${finishData.url}" target="_blank"><img src="${finishData.image}"></a><br>`;
-      resultElement += `<a href="${finishData.url}" target="_blank">${finishData.source}</a><br>`;
+      resultElement += `<h4><a href="${finishData.url}" target="_blank">${finishData.source}</a><h4><br>`;
       resultElement += `<ul>`;
       for (i=0; i < finishData.ingredients[0].length; i++) {
         resultElement += `<li>(${finishData.ingredients[0][i]})</li>`;
@@ -62,7 +62,7 @@ function displaySearchData(data) {
   } else {
     resultElement += `<h4>No results</h4>`;
   }
-  $('.search-results').html(resultElement);
+  $('.search-results').append(resultElement);
 };
 
 /*$(#search).transition({ rotate: '45deg' });*/
@@ -78,3 +78,5 @@ function watchSubmit() {
 $(function(){watchSubmit();
 
 });
+
+$('#search').transition({ x: 200 });
