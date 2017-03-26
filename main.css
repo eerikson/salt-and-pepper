@@ -67,7 +67,7 @@ h4 {
   background-color: rgb(63,152,203);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.5em;
-  margin: 0 0;
+  margin: 0 0 5px 0;
 }
 
 input[type=text] {
@@ -98,7 +98,7 @@ input[type=text] {
 .list{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-style: normal;
-  font-size: .75em;
+  font-size: .6em;
   text-align: left;
   margin-top: -25px; 
 }
