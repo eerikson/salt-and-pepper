@@ -1,10 +1,14 @@
 body {
+  /* EE: I'd remove the first two background definitions and just keep linear-gradient. 
+  Browsers that don't support this are seriously ancient at this point. */
   background: #4CA1AF; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }      
 
 .all {
+  /* EE: I don't think this is necessary--<div /> elements are display: block by default, 
+  which already has width at 100%. */
   width: 100%
 }
 
@@ -16,12 +20,14 @@ body {
   padding-left: 10%
 }
 
-h2 {  
+h2 {
+  /* EE: You don't need to redeclare your font-families for each element! 
+  You can move them up to the body or html definitions above for a global setting. */
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5em; /* EE: Careful with using ems. They can cause some unexpected behavior when changing parent elements' sizing. */
   text-align: center;
-  padding: 0px;
-  margin: 0px 0px 0px 0px;
+  padding: 0px; /* EE: Generally good practice to remove units when defining 0px/0em/0%. Example: padding: 0; (this is a nitpick!) */
+  margin: 0px 0px 0px 0px; /* EE: This can literally just be 0 */
 }
 
 h3 {
@@ -40,6 +46,8 @@ h4 {
   padding-top: 5px;
 }
 
+/* EE: Avoid IDs when possible. There can only be one on the page of each, and they are needlessly specific in CSS,
+which can make overriding styles difficult. */
 #begin {
 	padding-top: 0px;
 	display: flex;
@@ -69,6 +77,9 @@ h4 {
   margin: 0 0 5px 0;
 }
 
+/* EE: Looks like #search and #starButton share a bunch of styles! Maybe you can move things
+like border, border-radius, background-color, etc to a shared class like ".button"? */
+
 input[type=text] {
   height: 2em;
   font-size: 1.5em;
@@ -91,7 +102,7 @@ input[type=text] {
   border: 1px solid rgb(128, 128, 128);
   border-radius: 5px;
   padding: 10px;
-  margin: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px; /* EE: This can just be margin: 4px */
 }
 
 .list {
